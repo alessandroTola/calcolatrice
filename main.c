@@ -8,6 +8,7 @@
 
 typedef enum {ADDIZIONE, SOTTRAZIONE, MOLTIPLICAZIONE, DIVISIONE} Operazioni;
 float addizione(float numero1, float numero2);
+float moltiplicazione(float numero1, float numero2);
 
 int main() {
 
@@ -18,6 +19,7 @@ int main() {
 
     printf("\nScegli operazione:");
     printf("\n-0) Addizione");
+    printf("\n-2) Moltiplicazione");
     scanf("%d", &scelta);
 
     printf("\nInserisci il primo numero: ");
@@ -30,6 +32,9 @@ int main() {
         case ADDIZIONE:
             risultato = addizione(numero1, numero2);
             break;
+        case MOLTIPLICAZIONE:
+            risultato = moltiplicazione(numero1, numero2);
+            break;
     }
 
     printf("\nRisultato: %2f", risultato);
@@ -38,4 +43,8 @@ int main() {
 
 float addizione(float numero1, float numero2){
     return numero1+numero2;
+}
+
+float moltiplicazione(float numero1, float numero2){
+    return numero1*numero2;
 }
