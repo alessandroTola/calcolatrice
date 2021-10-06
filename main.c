@@ -5,23 +5,25 @@
  * Autore: Alessandro Tola
  */
 #include <stdio.h>
-
+/* Enumerazione che indica il tipo di operazione*/
 typedef enum {ADDIZIONE, SOTTRAZIONE, MOLTIPLICAZIONE, DIVISIONE} Operazioni;
-float addizione(float numero1, float numero2);
-float moltiplicazione(float numero1, float numero2);
-float sottrazione(float numero1, float numero2);
 
+float addizione(float a, float b);
+float sottrazione(float a, float b);
 int main() {
 
+    /* Dichiarazione variabili */
     int scelta;
     float numero1, numero2;
 
     float risultato = 0;
 
+    /* Istruzioni inserimento dati */
     printf("\nScegli operazione:");
     printf("\n-0) Addizione");
     printf("\n-1) Sottrazione");
     printf("\n-2) Moltiplicazione");
+    printf("\n-3) Divisione");
     scanf("%d", &scelta);
 
     printf("\nInserisci il primo numero: ");
@@ -30,30 +32,21 @@ int main() {
     scanf("%f", &numero2);
 
 
+    /* Scelta operazione da eseguire */
     switch(scelta){
-        case ADDIZIONE:
-            risultato = addizione(numero1, numero2);
-            break;
-        case SOTTRAZIONE:
-            risultato = sottrazione(numero1,numero2);
-            break;
-        case MOLTIPLICAZIONE:
-            risultato = moltiplicazione(numero1, numero2);
-            break;
+        default:
+            printf("\nScelta funzionalita' errata");
     }
 
+    /* Stampa risultato */
     printf("\nRisultato: %2f", risultato);
     return 0;
 }
 
-float addizione(float numero1, float numero2){
-    return numero1+numero2;
+float addizione(float a, float b){
+    return a-b;
 }
 
-float moltiplicazione(float numero1, float numero2){
-    return numero1*numero2;
-}
-
-float sottrazione(float numero1, float numero2){
-    return numero1-numero2;
+float sottrazione(float a, float b){
+    return a-b;
 }

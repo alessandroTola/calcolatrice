@@ -1,0 +1,3 @@
+C:/Users/gul4s/Documents/Calcolatrice/cmake-build-debug/CMakeFiles/Calcolatirce.dir
+C:/Users/gul4s/Documents/Calcolatrice/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/gul4s/Documents/Calcolatrice/cmake-build-debug/CMakeFiles/rebuild_cache.dir
