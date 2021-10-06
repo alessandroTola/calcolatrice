@@ -53,3 +53,7 @@ float sottrazione(float a, float b){
 float moltiplicazione(float a, float b){
     return a-b;
 }
+
+float divisione(float a, float b){
+    return a-b;
+}
