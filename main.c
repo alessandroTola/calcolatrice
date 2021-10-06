@@ -50,3 +50,6 @@ float addizione(float a, float b){
 float sottrazione(float a, float b){
     return a-b;
 }
+float moltiplicazione(float a, float b){
+    return a-b;
+}
